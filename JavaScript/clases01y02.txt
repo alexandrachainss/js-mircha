@@ -1,0 +1,121 @@
+Clase 01
+
+JavaScript no tiene nada que ver con Java.
+
+Clase 02
+
+Caracteristicas de JavaScript
+
+- Lenguaje de alto nivel.
+    No requiere gestion de recursos como memoria, etc.
+- Interpretado.
+- Dinamico.
+    Se va compilando automaticamente a medida que escribes el codigo.
+- Debilmente tipado.
+    Las variables asignadas pueden cambiar tanto su valor como su tipo de dato, no es necesario asignar el tipo de dato al crear la variable.
+- Multi-paradigma.
+    Programacion estructurada, programacion orientada a objetos, programacion funcional, etc.
+- Case-sensitive.
+    Sensible a mayusculas y minusculas. No es lo mismo 'PERRO' que 'perro'.
+- No se necesitan los puntos y comas al final de cada linea.
+    Se pueden usar, pero no son necesarios.
+
+Escritura del codigo
+
+- Los identificadores deben comenzar con:
+    Una letra
+    Un signo $
+    Un guion bajo _
+    Nunca con numeros o caracteres especiales
+        (NO USAR CARACTERES AJENOS AL INGLES, COMO TILDES. NO USAR ESPACIOS EN BLANCO)
+
+- Usa snake_case en:
+    * Archivos
+        mi_archivo_javascript.js
+
+- Usa UPPER_CASE en:
+    * Constantes
+        const UNA_CONSTANTE = "Soy una constante"
+        const PI = 3.14
+
+- Usa UpperCaseCamel en:
+    * Clases
+        class SerHumano {
+            constructor (nombre, genero) {
+                this.nombre = nombre
+                this.genero = genero
+            }
+            miNombreEs() {
+                return 'Mi nombre es ${this.nombre}'
+            }
+        }
+
+- Usa lowerCamelCase en: (si tiene una sola palabra, va en minusculas)
+    * Objetos
+        const unObjeto = {
+            nombre: 'Jonathan',
+            email: 'jonmircha@gmail.com'
+        }
+    
+    * Primitivos
+        let unaCadena = 'Hola mundo',
+            unNumero = 19,
+            unBoolean = true
+        
+    * Funciones 
+        function holaMundo (nombre) {
+            alert('Hola mundo ${nombre}')
+        }
+        holaMundo('Jonathan')
+
+    * Instancias
+        const ajax = new XMLHttpRequest(),
+            jon = new SerHumano('Jonathan', 'Hombre')
+        
+Palabras Reservadas
+    Palabras que no se deben usar, ya que los diferentes lenguajes de programacion 
+    las utilizan para ciertas funcionalidades.
+    *javascript
+
+A: abstract
+B: boolean, *break, byte
+C: *case, catch, char, *class, *const, *continue, *confirm
+D: *debugger, *default, *delete, *do, double
+E: *else, *enum, *export, *extends
+F: *false, final, finally, float, *for, *function
+G: goto
+I: *if, *implements, *import, *in, *instanceof, int, *interface
+L: long
+N: native, *new, *null
+P: *package, *private, *protected, *public
+R: *return
+S: short, *static, *super, *switch, synchronized
+T: *this, *throw, throws, transient, *true, *try, *typeof
+V: *var, volatile, *void
+W: *while, *with
+
+Ordenamiento de codigo
+
+    - Importacion de modulos
+    - Declaracion de variables
+    - Declaracion de Funciones
+    - Ejecucion de codigo
+
+Tipos de datos en JavaScript
+
+- Primitivos: Se accede directamente al valor.
+    * string
+    * number
+    * boolean
+    * null
+    * undefined
+    * NaN (Not a Number)
+
+- Compuestos: Se accede a la referencia del valor.
+    * object = {}
+    * array = []
+    * function () {
+        // Contenido de la funcion
+    }
+    * Class {}
+    * etc.

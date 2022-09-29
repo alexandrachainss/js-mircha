@@ -1,0 +1,11 @@
+Variables (Var vs Let)
+
+Antes de 2015 tenia el scope global (alcance de todo el documento) y 
+scope funcional (variables que existen dentro de una funcion van a estar 
+disponibles dentro del cuerpo de la funcion), sin embargo en otros lenguajes
+el ambito de las variables es por bloque.
+
+Ahora javascript tiene el ambito de las variables tambien por bloque cuando
+declaramos variables con let en lugar de var.
+
+Un bloque en javascript esta definido por un bloque de llaves o 'curly braces' {}

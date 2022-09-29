@@ -1,0 +1,27 @@
+Constantes (const)
+
+No se puede declarar una constante vacía, hay que asignarle un valor.
+No se puede modificar el valor primitivo de una constante, sin embargo sí se puede
+cambiar en un objeto o un arreglo. Se puede agregar o quitar elementos a un objeto o array constante.
+
+let a;
+const PI = 3.1416;
+// const NUEVE;
+console.log(PI);
+// PI = 3.15;
+
+a = "kenai";
+console.log(a);
+
+let objeto = {
+    nombre: "jon",
+    edad: 35
+}
+
+let colores =["blanco", "negro", "azul"];
+
+console.log(objeto);
+console.log(colores);
+
+objeto.correo = "jonmircha@gmail.com"
+colores.push("anaranjado");
